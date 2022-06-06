@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="500" class="noSelect">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="500" class="Select">
 <nav class="navbar navbar-expand-sm bg-light fixed-top">
     <div class="container-fluid justify-content-start">
       <ul class="navbar-nav">
@@ -28,6 +28,7 @@
 <div class="all">
     <div class="dvs">
     <h1>Basics</h1>
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal1">
         <?php
         $txt = "PHP";
         echo "This is $txt! <br>";
@@ -38,29 +39,59 @@
         print "<br><a>PHP is Fun!</a>";
         ?>
     </div>
+    
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php <br>
+                $txt = "PHP";<br>
+                echo "This is $txt!";<br>
+                $x = 5;<br>
+                $y = 4;<br>
+                echo "Addition is: ";<br>
+                echo $x + $y;<br>
+                print "<a>PHP is Fun!</a>";<br>
+                ?
+            </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
 
     <div class="dvs">
     <h1>Array</h1>
-    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal1">
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal2">
         <p>var_dump</p>
             <?php
             $cars = array("Volvo","BMW","Toyota");
             var_dump($cars);
             ?>
     </div>
-    <p>define</p>
-        <?php
-        define("cars", [
-        "Alfa Romeo",
-        "BMW",
-        "Toyota"
-        ]);
-        echo cars[0];
-        ?>
-
-        <section class="buttonSep">
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal3">
+        <p>define</p>
+            <?php
+            define("cars", [
+            "Alfa Romeo",
+            "BMW",
+            "Toyota"
+            ]);
+            echo cars[0];
+            ?>
+    </div>
         <!-- The Modal -->
-        <div class="modal fade" id="myModal1">
+        <div class="modal fade" id="myModal2">
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- Modal Header -->
@@ -82,13 +113,39 @@
             </div>
           </div>
         </div>
-      </section>
-
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php <br>
+                define("cars", [ <br>
+                "Alfa Romeo", <br>
+                "BMW", <br>
+                "Toyota" <br>
+                ]); <br>
+                echo cars[0]; <br>
+                ? <br>
+            </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
 
     <div class="dvs">
     <h1>Class</h1>
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal4">
         <?php
         class Car {
         public $color;
@@ -110,21 +167,147 @@
         ?>
     </div>
 
+        <section class="buttonSep">
+        <!-- The Modal -->
+        <div class="modal fade" tabindex="-1" id="myModal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php <br>
+                class Car {<br>
+                public $color;<br>
+                public $model;<br>
+                public function __construct($color, $model) {<br>
+                    $this->color = $color;<br>
+                    $this->model = $model;<br>
+                }<br>
+                public function message() {<br>
+                    return "My car is a " . $this->color . " " . $this->model . "!";<br>
+                }<br>
+                }<br>
+                $myCar = new Car("black", "Volvo");<br>
+                echo $myCar -> message();<br>
+                $myCar = new Car("red", "Toyota");<br>
+                echo $myCar -> message();<br>
+                ?<br>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
 
     <div class="dvs">
     <h1>String</h1>
     <p>strrev</p>
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal5">
         <?php
-        echo strrev("Hello world!"); // outputs !dlrow olleH
+        echo strrev("Hello world!"); 
         ?><br>
+    </div>
+
+        <section class="buttonSep">
+        <!-- The Modal -->
+        <div class="modal fade" tabindex="-1" id="myModal5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php<br>
+                echo strrev("Hello world!"); <span>// !dlrow olleH</span><br>
+                ?<br>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal6">
     <p>strpos</p>
         <?php
-        echo strpos("Hello world!", "world"); // outputs 6
+        echo strpos("Hello world!", "world"); 
         ?>
+
+        <section class="buttonSep">
+        <!-- The Modal -->
+        <div class="modal fade" tabindex="-1" id="myModal6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php<br>
+                echo strpos("Hello world!", "world"); <span>// 6</span><br>
+                ?<br>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal7">
     <p>str_replace</p>
         <?php
-        echo str_replace("world", "Dolly", "Hello world!"); // outputs Hello Dolly!
+        echo str_replace("world", "Dolly", "Hello world!");
         ?>
+
+        <section class="buttonSep">
+        <!-- The Modal -->
+        <div class="modal fade" tabindex="-1" id="myModal7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php<br>
+                echo str_replace("world", "Dolly", "Hello world!"); <span>// Hello Dolly!</span><br>
+                ?<br>
+              </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
     </div>
 
 
