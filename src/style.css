@@ -3,6 +3,9 @@
     width: 100%;
     flex-wrap: wrap;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
+
 
     cursor:default;
     -webkit-touch-callout:none;
@@ -22,9 +25,9 @@
     width: 300px;
     margin: 20px;
     padding: 20px;
-
-
+    height: 100%;
 }
+
 h1{
     font-size: 35px;
     text-align: center;
@@ -41,7 +44,6 @@ p{
     cursor: text;
     user-select: all;
 }
-
 .modal-body span{
     color: green;
 }
