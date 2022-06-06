@@ -41,7 +41,7 @@
 
     <div class="dvs">
     <h1>Array</h1>
-    <div class="sub-dvs" >
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal1">
         <p>var_dump</p>
             <?php
             $cars = array("Volvo","BMW","Toyota");
@@ -58,6 +58,31 @@
         echo cars[0];
         ?>
 
+        <section class="buttonSep">
+        <!-- The Modal -->
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">Code</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+              <!-- Modal body -->
+              <div class="modal-body">
+                ?php<br>
+                $cars = array("Volvo","BMW","Toyota");<br>
+                var_dump($cars);<br>
+                ?
+            </div>
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
     </div>
 
