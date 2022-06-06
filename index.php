@@ -26,8 +26,10 @@
 
 <h1>PHP Basics </h1>
 <div class="all">
+
     <div class="dvs">
     <h1>Basics</h1>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal1">
         <?php
         $txt = "PHP";
@@ -69,9 +71,12 @@
           </div>
         </div>
     </div>
+</section>
+
 
     <div class="dvs">
     <h1>Array</h1>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal2">
         <p>var_dump</p>
             <?php
@@ -141,10 +146,12 @@
           </div>
         </div>
     </div>
+</section>
 
 
     <div class="dvs">
     <h1>Class</h1>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal4">
         <?php
         class Car {
@@ -207,10 +214,12 @@
       </section>
 
     </div>
+</section>
 
 
     <div class="dvs">
     <h1>String</h1>
+<section>
     <p>strrev</p>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal5">
         <?php
@@ -306,10 +315,12 @@
       </section>
 
     </div>
+</section>
 
 
     <div class="dvs">
     <h1>Constants</h1>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal14">
     <p>define</p>
         <?php
@@ -384,10 +395,12 @@
         </div>
       </section>
     </div>
+</section>
 
 
     <div class="dvs">
     <h1>If-else</h1>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal16">
     <p>if</p>
         <?php
@@ -470,11 +483,13 @@
       </section>
 
     </div>
+</section>
 
 
     <div class="dvs">
-    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal18">
     <h1>Switch</h1>
+<section>
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal18">
         <?php
         $favcolor = "red";
         switch ($favcolor) {
@@ -532,11 +547,13 @@
       </section>
 
     </div>
+</section>
 
 
     <div class="dvs">
-    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal18">
     <h1>Switch</h1>
+<section>
+    <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal18">
         <?php
         $favcolor = "red";
         switch ($favcolor) {
@@ -594,12 +611,12 @@
       </section>
 
     </div>
+</section>
 
 
-
-                    <!-- Loop -->
     <div class="dvs">
     <h1>Loop</h1>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal19">
     <p>while-loop</p>
         <?php
@@ -837,16 +854,15 @@
           </div>
         </div>
       </section>
+    </div>
+</section>
 
-</div>
 
-
-                    <!-- Numbers -->
-
-                    <div class="dvs">
+    <div class="dvs">
     <h1>Numbers</h1>
-    <p>is_float</p>
+<section>
     <div class="sub-dvs" data-bs-toggle="modal" data-bs-target="#myModal8">
+    <p>is_float</p>
             <?php
         $x = 10.365;
         var_dump(is_float($x));
@@ -1048,6 +1064,8 @@
       </section>
 
     </div>
+</section>
+
 
 </body>
 </html>
