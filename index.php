@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>PHP Tutorial</title>
     <link rel="icon" href="https://avatars.githubusercontent.com/u/76637730?v=4" type="image/gif" sizes="16x16" style="border-radius: 50%;">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="https://app.staticsave.com/root/root.css">
